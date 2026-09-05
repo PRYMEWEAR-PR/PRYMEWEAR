@@ -1,0 +1,173 @@
+{
+  "users": [
+    {
+      "name": "Urban Vastra",
+      "email": "urbanvastraaa@gmail.com",
+      "mobile": "",
+      "passwordHash": "firebase_authenticated_user",
+      "role": "customer",
+      "savedAddresses": [],
+      "id": "usr_966b3kvb",
+      "createdAt": "2026-08-22T19:17:23.340Z",
+      "updatedAt": "2026-08-22T19:17:23.340Z"
+    }
+  ],
+  "admins": [
+    {
+      "id": "admin_01",
+      "name": "Kartik (PRYMEWEAR Admin)",
+      "email": "thekartikbusiness@gmail.com",
+      "passwordHash": "$2b$10$Q16ZoPa0heoDks1OttZh7ub/H.xXlaxLqlpdWSPoO83KxEFsklEdu",
+      "role": "admin",
+      "createdAt": "2026-08-22T19:17:06.691Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_hoodies",
+      "name": "Hoodies & Sweatshirts",
+      "slug": "hoodies",
+      "description": "Heavyweight French terry oversized hoodies with architectural silhouettes.",
+      "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=80",
+      "featured": true,
+      "itemCount": 4
+    },
+    {
+      "id": "cat_tees",
+      "name": "Oversized Tees",
+      "slug": "t-shirts",
+      "description": "280 GSM luxury combed cotton boxy cut graphic & minimal tees.",
+      "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80",
+      "featured": true,
+      "itemCount": 4
+    },
+    {
+      "id": "cat_cargos",
+      "name": "Technical Cargo Pants",
+      "slug": "cargo-pants",
+      "description": "Modular streetwear cargo pants with waterproof hardware and adjustable cuffs.",
+      "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&auto=format&fit=crop&q=80",
+      "featured": true,
+      "itemCount": 3
+    },
+    {
+      "id": "cat_outerwear",
+      "name": "Outerwear & Jackets",
+      "slug": "outerwear",
+      "description": "Weather-resistant tactical bombers, sherpa flannels, and cropped utility jackets.",
+      "image": "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&auto=format&fit=crop&q=80",
+      "featured": true,
+      "itemCount": 3
+    },
+    {
+      "id": "cat_accessories",
+      "name": "Headwear & Accessories",
+      "slug": "accessories",
+      "description": "Structured dad caps, raw brass hardware necklaces, and cross-body holster bags.",
+      "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&auto=format&fit=crop&q=80",
+      "featured": false,
+      "itemCount": 2
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_09",
+      "name": "Spider Emblem Boxy Lightweight Oversized Tee",
+      "slug": "spider-emblem-boxy-Lightweight-oversized-tee",
+      "description": "Premium 280 GSM luxury combed cotton boxy oversized fit tee. Features a high-density embroidered spider emblem on the chest, dropped shoulders, and a heavy rib knit collar that maintains its shape. Available in 4 high-fashion colorways.",
+      "price": 1999,
+      "discountPrice": 1099,
+      "images": [
+        "https://i.ibb.co/j92wN435/Gemini-Generated-Image-swpsvbswpsvbswps.png",
+        "https://i.ibb.co/8DgBCYy3/Gemini-Generated-Image-wca24gwca24gwca2.png",
+        "https://i.ibb.co/XrJC6C0f/Front-1-c-51.jpg",
+        "https://i.ibb.co/Nd3HFjNp/Front-1-c-49.jpg",
+        "https://i.ibb.co/05sF4qs/Front-1-c-45.jpg",
+        "https://i.ibb.co/rGX1JCC2/Front-1-c-4.jpg"
+      ],
+      "category": "Oversized Tees",
+      "availableSizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        "White",
+        "Cream",
+        "Lavender",
+        "Grey"
+      ],
+      "stockQuantity": 100,
+      "sku": "PRY-TEE-SPD-1099",
+      "status": "active",
+      "isFeatured": true,
+      "isBestSeller": true,
+      "isNewArrival": true,
+      "averageRating": 5,
+      "reviewCount": 18,
+      "createdAt": "2026-08-22T19:17:06.691Z",
+      "updatedAt": "2026-08-22T19:17:06.691Z"
+    }
+  ],
+  "orders": [],
+  "reviews": [
+    {
+      "id": "rev_01",
+      "productId": "prod_01",
+      "productName": "PRYME Architectural 500GSM Heavyweight Hoodie",
+      "userId": "demo_usr_01",
+      "userName": "Rohan Malhotra",
+      "rating": 5,
+      "review": "The 500 GSM weight is unreal. It holds its boxy silhouette perfectly and the double-layered hood stands without slumping. Best luxury hoodie in India hands down.",
+      "status": "approved",
+      "isFeatured": true,
+      "verifiedPurchase": true,
+      "createdAt": "2026-08-16T19:17:06.691Z"
+    },
+    {
+      "id": "rev_02",
+      "productId": "prod_01",
+      "productName": "PRYME Architectural 500GSM Heavyweight Hoodie",
+      "userId": "demo_usr_02",
+      "userName": "Ananya Deshmukh",
+      "rating": 5,
+      "review": "Clean minimal luxury. No annoying logo spam, just premium heavyweight fabric and immaculate stitching. Arrived in 3 days with COD.",
+      "status": "approved",
+      "isFeatured": true,
+      "verifiedPurchase": true,
+      "createdAt": "2026-08-18T19:17:06.691Z"
+    },
+    {
+      "id": "rev_03",
+      "productId": "prod_02",
+      "productName": "Acid Wash Distressed Boxy Vintage Tee",
+      "userId": "demo_usr_03",
+      "userName": "Vikram Mehta",
+      "rating": 5,
+      "review": "The vintage acid wash look is super authentic. Thick collar that doesn't bacon after washes. Fits oversized exactly as pictured.",
+      "status": "approved",
+      "isFeatured": true,
+      "verifiedPurchase": true,
+      "createdAt": "2026-08-20T19:17:06.691Z"
+    }
+  ],
+  "settings": {
+    "storeName": "PRYMEWEAR",
+    "tagline": "Engineered Streetwear & Minimal Luxury",
+    "supportEmail": "thekrtikbusinesss@gmail.com",
+    "supportPhone": "+91 9211597397",
+    "storeAddress": "RZ 57, Shyam Vihar, Najafgarh, Delhi 110043",
+    "instagramUrl": "https://instagram.com/prymewear",
+    "twitterUrl": "https://twitter.com/prymewear",
+    "facebookUrl": "https://facebook.com/prymewear",
+    "freeShippingThreshold": 1999,
+    "standardShippingRate": 99,
+    "shippingPolicy": "PRYMEWEAR provides express nationwide delivery across India.\n\n• Processing Time: All orders are inspected, quality-checked, and packed within 24-48 hours of confirmation.\n• Delivery Time: Metro cities: 2-4 business days. Rest of India: 4-7 business days.\n• Free Shipping: Free standard shipping on all orders over ₹1,999. Orders below ₹1,999 incur a flat ₹99 shipping fee.\n• Cash on Delivery (COD): COD is available on all eligible postal codes across India. Our courier partners will collect payment upon physical delivery.\n• Tracking: Real-time tracking IDs will be shared via email and your customer account order timeline as soon as the package is dispatched.",
+    "returnPolicy": "We stand behind the craftsmanship of every PRYMEWEAR garment.\n\n• 7-Day Hassle-Free Exchange & Return Window: You may initiate an exchange or return within 7 calendar days of delivery.\n• Condition Requirements: Items must be unwashed, unworn, and returned in original condition with all garment tags intact and original packaging.\n• Easy Returns Process: Log in to your customer account, navigate to 'Orders', select the item, and click 'Request Return/Exchange'.\n• Refunds: For COD orders, refund will be transferred via NEFT/UPI bank transfer to your provided account within 3-5 working days of our inspection team approving the return.",
+    "privacyPolicy": "PRYMEWEAR values and respects your personal privacy.\n\n• Information Collected: We collect your name, email, delivery address, and phone number exclusively for order processing, customer support, and shipment updates.\n• Zero Third-Party Selling: We never sell, rent, or trade your personal data to external advertisers.\n• Secure Encryption: All customer account credentials, passwords, and sessions are encrypted using industry-standard salted hashing and secure tokens.",
+    "termsConditions": "By browsing or placing an order on PRYMEWEAR, you agree to our standard terms of service.\n\n• Product Pricing & Availability: All prices are in Indian Rupees (INR) and inclusive of applicable GST. We reserve the right to correct any typographical pricing errors.\n• Order Acceptance: Placement of an order represents an offer to purchase. An order is confirmed when approved by our administrative team and an Order Confirmation email is generated.\n• Intellectual Property: All PRYMEWEAR designs, logos, product imagery, and text copy are proprietary to PRYMEWEAR.",
+    "aboutStory": "Born in Mumbai with global streetwear sensibilities, PRYMEWEAR merges architectural silhouettes, uncompromising heavyweight textiles, and raw brutalist design. Every piece is constructed to withstand everyday urban wear while maintaining a sharp luxury aesthetic."
+  }
+}

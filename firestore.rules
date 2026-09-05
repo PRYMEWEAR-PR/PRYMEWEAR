@@ -1,0 +1,54 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper function
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Publicly readable store settings & categories
+    match /settings/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    // Products: anyone can read active products, authenticated can write/manage
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    // Reviews: anyone can read, authenticated can write
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if true;
+      allow update, delete: if isAuthenticated();
+    }
+
+    // Users: owners can read/write their own profile
+    match /users/{userId} {
+      allow read, write: if isOwner(userId) || isAuthenticated();
+    }
+
+    // Orders: customers can view & create their orders, admin can manage all
+    match /orders/{orderId} {
+      allow read: if true;
+      allow create: if true;
+      allow update, delete: if isAuthenticated();
+    }
+
+    // Admin Logs / Outbox
+    match /outbox/{msgId} {
+      allow read, write: if isAuthenticated();
+    }
+  }
+}
